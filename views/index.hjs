@@ -4,7 +4,7 @@
 
   <head>
 
-    <title>{{ title }}</title>
+    <title>{{ brianhan }}</title>
 
     <meta charset="utf-8">
 
@@ -20,8 +20,9 @@
   </head>
 
   <body>
+    hello
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-md-12">
           <a href="http://www.runkite.com" target="_blank">
@@ -73,7 +74,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </body>
 
