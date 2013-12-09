@@ -1,0 +1,1037 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// bootstrap overrides
+
+/* Universal Styles ----------- */
+body {
+  margin: 0px;
+  margin-top: -16px;
+  font-family: "HelveticaNeue", Sans-Serif;
+  font-weight: bold;
+}
+
+hr {
+  border: 0px;
+  height: 1px;
+  background-color: black;
+}
+
+h1 {
+  opacity: 1;
+  font-size: 4.375em;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0; 
+  padding: 0;
+  font-weight: normal;
+  font-style: italic;
+  font-family: "TimesNewRoman", Serif;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.htmlcss {
+  background-color: hsla(35, 100%, 67%, 0.3);
+  background-color: #ffb957;
+}
+.photoshop {
+  background-color: hsla(214, 79%, 64%, 0.82);
+  background-color: #5b9aec;
+}
+.js {
+  background-color: hsla(58, 79%, 64%, 0.82);
+  background-color: #ece75b;
+}
+.ror {
+  background-color: hsla(359, 79%, 64%, 0.82);
+  background-color: #ec5b5d;
+}
+.agile {
+  background-color: hsla(140, 79%, 64%, 0.82);
+  background-color: #5bec8b;
+}
+.git {
+  background-color: turquoise;
+}
+.video {
+  background-color: #ccc;
+}
+
+/* Big Screens - Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1640px) {
+/* Styles */
+  a.carousel-control.left,
+  a.carousel-control.right {
+    margin-top: 7em;
+    transition: ease-in-out 0.3s;
+    &:hover {
+      background-color: green;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+  #home.active.item {
+    float: left;
+    position: fixed;
+    background-image: url('images/cali_beach_light_1920.jpg');
+    width: 100%;
+    height: 100%;
+    margin-top: -4px;
+    // height: 60em;
+    // height: 100%;
+    
+    .title {
+      background-color: white;
+      margin-top: 19.625em;
+      margin-left: 28.33%;
+      // margin-bottom: 19.625em;
+      width: 33.33%;
+      text-align: center;
+      color: black;
+      padding: 5%;
+      opacity: 0.85;
+    }
+  }
+
+  div#hello-koala {
+    float: left;
+    background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
+    background-size: 125%;
+    width: 100%;
+    height: 61em;
+    font-family: "Futura", "HelveticaNeue", Sans-serif;
+    font-style: italic;
+    color: white;
+    text-transform: uppercase;
+
+    .koala.container {
+      width: 100%;
+      padding-top: 4em;
+      padding-bottom: 4em;
+      text-align: center;
+      
+      p {
+        font-size: 1.1em;
+      }
+      h1.letter-spaced {
+        color: yellow;
+        letter-spacing: 0.25em;
+        font-size: 5em;
+        opacity: 0.85;
+      }
+    }
+  }
+    div#skills {
+      float: left;
+      width: 50%;
+      height: 32.25em;
+      background-image: url(<%= asset_path 'workstation_1200.jpg' %>);
+      background-size: 100%;
+      font-family: "Futura", Sans-serif;
+      text-transform: uppercase;
+
+      .skills.container {
+        width: 100%;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        text-align: center;
+        h1 {
+          font-size: 5em;
+          letter-spacing: 0.25em;
+          font-style: italic;
+          color: yellow;
+          opacity: 0.9;
+
+        }
+        p {
+          font-size: 1em;
+          font-weight: normal;
+        }
+        small {
+          font-weight: normal;
+        }
+        ul li{
+          list-style-type: none;
+          text-align: left;
+          float: left;
+          margin: 1em;
+        } 
+        em {
+          padding: 0.5em;
+          border-radius: 5px;
+          opacity: 0.9;
+          color: black;
+          font-weight: normal;
+        }
+      }
+    }
+  
+
+  #contact {
+    background-image: url(<%= asset_path 'filmburn-green.jpg' %>);
+    float: left;
+    width: 50%;
+    height: 30em;
+    .contact.container {
+      width: 50%;
+      margin-left: 25%;
+      font-family: "Futura", Sans-serif;
+      font-style: italic;
+      h1 {
+        text-align: center;
+        color: yellow;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        letter-spacing: 0.1em; 
+      }
+      .whitebox {
+        background-color: white;
+        opacity: 0.7;
+        padding: 0.1em;
+        text-align: center;
+        p {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  #links {
+    background-image: url(<%= asset_path 'filmburn-blue-flipped.jpg' %>);
+    float: right;
+    width: 50%;
+    height: 30em;
+    .links.container {
+      width: 100%;
+      font-family: "Futura", Sans-serif;
+      font-style: italic;
+      // background-color: black;
+
+      img {
+        width: 3.5em;
+        height: 3.5em;
+        border-radius: 100%;
+      }
+      ul {
+        // background-color: white;
+        float: left;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 12em;
+        li {
+          padding: 1em;
+          float: left;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* Small Screens - Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1434px)
+and (max-width : 1640px) {
+/* Styles */
+  #home {
+    background-image: url(<%= asset_path 'cali_beach_light_1920.jpg' %>);
+    background-size: 100%, 100%;
+    width: 100%;
+    height: 59.5em;
+    
+    .home.container {
+      background-color: white;
+      float: left;
+      margin-top: 19.625em;
+      // margin-left: 24.265em;
+      margin-left: 28.33%;
+      // border: 6px solid white;
+      // width: 31.25em;
+      width: 33.33%;
+      text-align: center;
+      color: black;
+      // padding: 4.375em;
+      padding: 5%;
+      opacity: 0.85;
+    }
+  }
+  #hello {
+    // background-color: #ccc;
+    float: left;
+    // width: 1440px;
+    width: 100%;
+    
+
+    div#hello-koala {
+      float: left;
+      background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
+      background-size: 125%;
+      width: 50%;
+      height: 28.05em;
+      font-family: "Futura", "HelveticaNeue", Sans-serif;
+      font-style: italic;
+      color: white;
+      text-transform: uppercase;
+      .koala.container {
+        width: 100%;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        text-align: center;
+        p {
+          font-size: 1em;
+        }
+        h1.letter-spaced {
+          color: yellow;
+          letter-spacing: 0.25em;
+          font-size: 5em;
+          opacity: 0.85;
+        }
+      }
+    }
+    div#skills {
+      float: left;
+      width: 50%;
+      height: 28.05em;
+      background-image: url(<%= asset_path 'workstation_1200.jpg' %>);
+      background-size: 100%;
+      font-family: "Futura", Sans-serif;
+      text-transform: uppercase;
+
+      .skills.container {
+        width: 100%;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        text-align: center;
+        h1 {
+          font-size: 5em;
+          letter-spacing: 0.25em;
+          font-style: italic;
+          color: yellow;
+          opacity: 0.9;
+
+        }
+        p {
+          font-size: 1em;
+          font-weight: normal;
+        }
+        small {
+          font-weight: normal;
+        }
+        ul li{
+          list-style-type: none;
+          text-align: left;
+          float: left;
+          margin: 1em;
+        } 
+        em {
+          padding: 0.5em;
+          border-radius: 5px;
+          opacity: 0.9;
+          color: black;
+          font-weight: normal;
+          
+        }
+      }
+    }
+  }
+}
+
+/* WXGA and Tablet ----------- */
+@media only screen 
+and (min-width : 1366px)
+and (max-width : 1434px) {
+/* Styles */
+  #home {
+    background-image: url(<%= asset_path 'cali_beach_light_1920.jpg' %>);
+    background-size: 100%, 100%;
+    width: 100%;
+    height: 49.5em;
+    
+    .home.container {
+      background-color: white;
+      float: left;
+      margin-top: 16.625em;
+      margin-left: 28.33%;
+      width: 33.33%;
+      text-align: center;
+      color: black;
+      padding: 5%;
+      opacity: 0.85;
+    }
+  }
+  #hello {
+    float: left;
+    width: 100%;
+    
+
+    div#hello-koala {
+      float: left;
+      background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
+      background-size: 125%;
+      width: 50%;
+      height: 26.05em;
+      font-family: "Futura", "HelveticaNeue", Sans-serif;
+      font-style: italic;
+      color: white;
+      text-transform: uppercase;
+      .koala.container {
+        width: 100%;
+        // background-color: hsla(275, 100%, 3%, 0.53);
+        padding-top: 4em;
+        padding-bottom: 4em;
+        text-align: center;
+        // background-color: #09000f;
+        p {
+          font-size: 1em;
+        }
+        h1.letter-spaced {
+          color: yellow;
+          letter-spacing: 0.25em;
+          font-size: 4em;
+          opacity: 0.85;
+        }
+      }
+    }
+    div#skills {
+      float: left;
+      width: 50%;
+      height: 26.05em;
+      background-image: url(<%= asset_path 'workstation_1200.jpg' %>);
+      background-size: 100%;
+      font-family: "Futura", Sans-serif;
+      text-transform: uppercase;
+
+      .skills.container {
+        width: 100%;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        text-align: center;
+        h1 {
+          font-size: 4em;
+          letter-spacing: 0.25em;
+          font-style: italic;
+          color: yellow;
+          opacity: 0.9;
+
+        }
+        p {
+          font-size: 1em;
+          font-weight: normal;
+        }
+        small {
+          font-weight: normal;
+        }
+        ul li{
+          list-style-type: none;
+          text-align: left;
+          float: left;
+          margin: 0.75em;
+        } 
+        em {
+          padding: 0.5em;
+          border-radius: 5px;
+          opacity: 0.9;
+          color: black;
+          font-weight: normal;
+          
+        }
+      }
+    }
+  }
+}
+
+/* WXGA and iPad ----------- */
+@media only screen 
+and (min-width : 1024px)
+and (max-width : 1366px) {
+/* Styles */
+  #home {
+    background-image: url(<%= asset_path 'cali_beach_light_1920.jpg' %>);
+    background-size: 100%, 100%;
+    width: 100%;
+    height: 41.5em;
+    
+    .home.container {
+      background-color: white;
+      float: left;
+      margin-top: 16.625em;
+      margin-left: 28.33%;
+      width: 33.33%;
+      text-align: center;
+      color: black;
+      // padding: 4.375em;
+      padding: 5%;
+      opacity: 0.85;
+      h1 {
+        opacity: 1;
+        // font-size: 70px;
+        font-size: 3.375em;
+        // background-color: white;
+        // margin-bottom: 0;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  #hello {
+    float: left;
+    width: 100%;
+    
+
+    div#hello-koala {
+      float: left;
+      background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
+      background-size: 90%;
+      width: 100%;
+      height: 23.05em;
+      font-family: "Futura", "HelveticaNeue", Sans-serif;
+      font-style: italic;
+      color: white;
+      text-transform: uppercase;
+      .koala.container {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        
+        p {
+          font-size: 1em;
+        }
+        h1.letter-spaced {
+          color: yellow;
+          letter-spacing: 0.25em;
+          font-size: 4em;
+          opacity: 0.85;
+        }
+      }
+    }
+    div#skills {
+      float: left;
+      width: 100%;
+      height: 23.05em;
+      background-image: url(<%= asset_path 'workstation_1200.jpg' %>);
+      background-size: 100%;
+      font-family: "Futura", Sans-serif;
+      text-transform: uppercase;
+
+      .skills.container {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        h1 {
+          font-size: 4em;
+          letter-spacing: 0.25em;
+          font-style: italic;
+          color: yellow;
+          opacity: 0.9;
+          margin-bottom: 0.5em;
+
+        }
+        p {
+          font-size: 1em;
+          font-weight: normal;
+        }
+        small {
+          font-weight: normal;
+        }
+        ul li{
+          list-style-type: none;
+          float: left;
+          margin: 1em;
+        } 
+        em {
+          padding: 0.5em;
+          border-radius: 5px;
+          opacity: 0.9;
+          color: black;
+          font-weight: normal;
+          
+        }
+      }
+    }
+  }
+}
+
+/* WXGA and High-End Windows Phone ----------- */
+@media only screen 
+and (min-width : 768px)
+and (max-width : 1024px) {
+/* Styles */
+  #home {
+    background-image: url(<%= asset_path 'cali_beach_light_1920.jpg' %>);
+    background-size: 100%, 100%;
+    width: 100%;
+    height: 31.5em;
+    
+    .home.container {
+      background-color: white;
+      float: left;
+      margin-top: 10.625em;
+      margin-left: 28.33%;
+      width: 33.33%;
+      text-align: center;
+      color: black;
+      padding: 5%;
+      opacity: 0.85;
+      h1 {
+        opacity: 1;
+        // font-size: 70px;
+        font-size: 2.7em;
+        // background-color: white;
+        // margin-bottom: 0;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  #hello {
+    float: left;
+    width: 100%;
+    
+
+    div#hello-koala {
+      float: left;
+      background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
+      background-size: 100%;
+      width: 100%;
+      height: 22.05em;
+      font-family: "Futura", "HelveticaNeue", Sans-serif;
+      font-style: italic;
+      color: white;
+      text-transform: uppercase;
+      .koala.container {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        
+        p {
+          font-size: 1em;
+        }
+        h1.letter-spaced {
+          color: yellow;
+          letter-spacing: 0.25em;
+          font-size: 4em;
+          opacity: 0.85;
+        }
+      }
+    }
+    div#skills {
+      float: left;
+      width: 100%;
+      height: 23.05em;
+      background-image: url(<%= asset_path 'workstation_1200.jpg' %>);
+      background-size: 100%;
+      font-family: "Futura", Sans-serif;
+      text-transform: uppercase;
+
+      .skills.container {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        h1 {
+          font-size: 4em;
+          letter-spacing: 0.25em;
+          font-style: italic;
+          color: yellow;
+          opacity: 0.9;
+          margin-bottom: 0.3em;
+
+        }
+        p {
+          font-size: 1em;
+          font-weight: normal;
+        }
+        small {
+          font-weight: normal;
+        }
+        ul li{
+          list-style-type: none;
+          float: left;
+          margin: 1em;
+        } 
+        em {
+          padding: 0.5em;
+          border-radius: 5px;
+          opacity: 0.9;
+          color: black;
+          font-weight: normal;
+          
+        }
+      }
+    }
+  }
+}
+
+/* DXGA and iPhone ----------- */
+@media only screen 
+and (min-width : 640px)
+and (max-width : 768px) {
+/* Styles */
+  #home {
+    background-image: url(<%= asset_path 'cali_beach_light_1920.jpg' %>);
+    background-size: 100%, 100%;
+    width: 100%;
+    height: 25.5em;
+    
+    .home.container {
+      background-color: white;
+      float: left;
+      margin-top: 8.625em;
+      margin-left: 25%;
+      width: 40%;
+      text-align: center;
+      color: black;
+      // padding: 4.375em;
+      padding: 5%;
+      opacity: 0.85;
+      h1 {
+        opacity: 1;
+        // font-size: 70px;
+        font-size: 2.7em;
+        // background-color: white;
+        // margin-bottom: 0;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  #hello {
+    float: left;
+    width: 100%;
+    
+
+    div#hello-koala {
+      float: left;
+      background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
+      background-size: 120%;
+      width: 100%;
+      height: 22.05em;
+      font-family: "Futura", "HelveticaNeue", Sans-serif;
+      font-style: italic;
+      color: white;
+      text-transform: uppercase;
+      .koala.container {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        
+        p {
+          font-size: 1em;
+        }
+        h1.letter-spaced {
+          color: yellow;
+          letter-spacing: 0.25em;
+          font-size: 4em;
+          opacity: 0.85;
+        }
+      }
+    }
+    div#skills {
+      float: left;
+      width: 100%;
+      height: 26.05em;
+      background-image: url(<%= asset_path 'workstation_1200.jpg' %>);
+      background-size: 105%;
+      font-family: "Futura", Sans-serif;
+      text-transform: uppercase;
+
+      .skills.container {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        h1 {
+          font-size: 4em;
+          letter-spacing: 0.25em;
+          font-style: italic;
+          color: yellow;
+          opacity: 0.9;
+          margin-bottom: 0.8em;
+
+        }
+        p {
+          font-size: 1em;
+          font-weight: normal;
+        }
+        small {
+          font-weight: normal;
+        }
+        ul li{
+          list-style-type: none;
+          float: left;
+          margin: 1em;
+        } 
+        em {
+          padding: 0.5em;
+          border-radius: 5px;
+          opacity: 0.9;
+          color: black;
+          font-weight: normal;
+          
+        }
+      }
+    }
+  }
+}
+
+/* WVGA and Low-End Windows Phone ----------- */
+@media only screen 
+and (min-width : 480px)
+and (max-width : 640px) {
+/* Styles */
+  #home {
+    background-image: url(<%= asset_path 'cali_beach_light_1920.jpg' %>);
+    background-size: 100%, 100%;
+    width: 100%;
+    height: 19.5em;
+    
+    .home.container {
+      background-color: white;
+      float: left;
+      margin-top: 5.625em;
+      margin-left: 5%;
+      width: 80%;
+      text-align: center;
+      color: black;
+      padding: 5%;
+      opacity: 0.85;
+      h1 {
+        opacity: 1;
+        // font-size: 70px;
+        font-size: 3em;
+        // background-color: white;
+        // margin-bottom: 0;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        // background-color: blue;
+        // margin-top: 0;
+        margin: 0; 
+        padding: 0;
+        font-weight: normal;
+        font-style: italic;
+        font-family: "TimesNewRoman", Serif;
+        font-size: 1em;
+      }
+    }
+  }
+  #hello {
+    float: left;
+    width: 100%;
+    
+
+    div#hello-koala {
+      float: left;
+      background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
+      background-size: 150%;
+      width: 100%;
+      height: 19em;
+      font-family: "Futura", "HelveticaNeue", Sans-serif;
+      font-style: italic;
+      color: white;
+      text-transform: uppercase;
+      .koala.container {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        
+        p {
+          font-size: 0.85em;
+        }
+        h1.letter-spaced {
+          color: yellow;
+          letter-spacing: 0.2em;
+          font-size: 3em;
+          opacity: 0.85;
+        }
+      }
+    }
+    div#skills {
+      float: left;
+      width: 100%;
+      height: 36.05em;
+      background-image: url(<%= asset_path 'workstation_1200.jpg' %>);
+      background-size: 192%;
+      font-family: "Futura", Sans-serif;
+      text-transform: uppercase;
+
+      .skills.container {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        h1 {
+          font-size: 3em;
+          letter-spacing: 0.2em;
+          font-style: italic;
+          color: yellow;
+          opacity: 0.9;
+          margin-bottom: 0.3em;
+
+        }
+        small {
+          font-weight: normal;
+        }
+        ul li{
+          list-style-type: none;
+          // float: left;
+          text-align: left;
+          margin-bottom: 0.65em;
+          margin-left: 21%;
+        } 
+        em {
+          padding: 0.5em;
+          border-radius: 5px;
+          opacity: 0.9;
+          color: black;
+          font-weight: normal;
+          font-size: 0.8em;
+          
+        }
+      }
+    }
+  }
+}
+
+/* HVGA and Low-End Androids ----------- */
+@media only screen 
+and (min-width : 320px)
+and (max-width : 480px) {
+/* Styles */
+  #home {
+    background-image: url(<%= asset_path 'cali_beach_light_1920.jpg' %>);
+    background-size: 100%, 100%;
+    width: 100%;
+    height: 12.5em;
+    
+    .home.container {
+      background-color: white;
+      float: left;
+      margin-top: 3.95em;
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+      color: black;
+      padding: 0.5em;
+      opacity: 0.75;
+      h1 {
+        opacity: 1;
+        // font-size: 70px;
+        font-size: 2em;
+        // background-color: white;
+        // margin-bottom: 0;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        // background-color: blue;
+        // margin-top: 0;
+        margin: 0; 
+        padding: 0;
+        font-weight: normal;
+        font-style: italic;
+        font-family: "TimesNewRoman", Serif;
+        font-size: 1.25em;
+      }
+    }
+  }
+  #hello {
+    float: left;
+    width: 100%;
+    
+
+    div#hello-koala {
+      float: left;
+      background-image: url(<%= asset_path 'hello_koala_1000_dark.jpg' %>);
+      background-size: 210%;
+      width: 100%;
+      height: 14em;
+      font-family: "Futura", "HelveticaNeue", Sans-serif;
+      font-style: italic;
+      color: white;
+      text-transform: uppercase;
+      .koala.container {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        
+        p {
+          font-size: 0.57em;
+        }
+        h1.letter-spaced {
+          color: yellow;
+          letter-spacing: 0.2em;
+          font-size: 3em;
+          opacity: 0.85;
+        }
+      }
+    }
+    div#skills {
+      float: left;
+      width: 100%;
+      height: 36.05em;
+      background-image: url(<%= asset_path 'workstation_1200.jpg' %>);
+      background-size: 290%;
+      font-family: "Futura", Sans-serif;
+      text-transform: uppercase;
+
+      .skills.container {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        h1 {
+          font-size: 3em;
+          letter-spacing: 0.2em;
+          font-style: italic;
+          color: yellow;
+          opacity: 0.9;
+          margin-bottom: 0.3em;
+
+        }
+        small {
+          font-weight: normal;
+        }
+        ul li{
+          list-style-type: none;
+          // float: left;
+          text-align: left;
+          margin-bottom: 0.65em;
+          margin-left: 21%;
+        } 
+        em {
+          padding: 0.5em;
+          border-radius: 5px;
+          opacity: 0.9;
+          color: black;
+          font-weight: normal;
+          font-size: 0.8em;
+          
+        }
+      }
+    }
+  }
+}
